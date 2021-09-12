@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #e5e5e5;
+  background-image: url(/img/Image\ 1.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+background-image {
+  width: 660px;
+}
+.container {
+  position: relative;
+  width: 535px;
+  max-height: 1000px;
+  margin-left: 174px;
+}
+nav {
+  border-bottom: 1px solid #c08d5d;
+  max-width: 470px;
+  margin-bottom: 138px;
+}
+.copy {
+  position: relative;
+  z-index: 1;
+  left: 10px;
+  width: 15.94px;
+  height: 28.72px;
+  transform: rotate(-40deg);
+}
+/* тут я ззапуталась вертя колосок */
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #3f4042;
+  size: 20px;
+  padding: 27px;
+  margin-bottom: 27px;
+}
+nav a :visited {
+  color: #3f4042;
+}
+nav a:hover {
+  color: #c08d5d;
+}
+h1 {
+  font-family: Yeseva;
+  font-size: 70px;
+  color: #3f4042;
+}
+h1 span {
+  font-size: 50px;
+  display: block;
+}
+h1 span::after {
+  content: "";
+  background: url(/img/Path\ Copy.png); /* как вставить вторую картинку*/
+  height: 68px;
+  width: 30px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.line {
+  display: inline-block;
+  width: 165px;
+  margin-top: 45px;
+  margin-bottom: 26px;
+}
+p {
+  font-family: Open;
+  line-height: 27px;
+  font-size: 20px;
+  max-height: 108px;
+  width: 470px;
+  margin-bottom: 72px;
+}
+.readmore {
+  display: inline-block;
+  border: 2px solid #c08d5d;
+  color: #3f4042;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 64px;
+  width: 168px;
+  text-align: center;
+  padding-left: 10px;
+}
+.readmore::after {
+  content: "\21C1";
+  display: inline-block;
+  width: 54px;
+  height: 64px;
+  background-color: #c08d5d;
+  text-align: center;
+  margin-left: 10px;
+}
+.mouse {
+  position: absolute;
+  display: inline-block;
+  width: 33.47px;
+  text-align: left;
+  right: 0px;
+  bottom: 0px;
+}
+.mouse::before {
+  display: block;
+  content: ".";
+  background-image: url(/img/Ellipse\ 6.png);
+  width: 17px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  text-align: center;
+}
+/*как вставить несколько псевдоэлементов? С колосками.
+Возникли сложности с мышью..я пробовола ее ставить относительно контейнера,и задавала значения относительно экрана. */
